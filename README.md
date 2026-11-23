@@ -9,7 +9,6 @@ Supplementary Material
 
 Additional details on the datasets, experimental protocol, CKA analysis, and experimental results are available in:
 
-/CALCAM_ESANN2027_Supplementary_Material.pdf
 📄 CALCAM ESANN 2027 - Supplementary Material
 
 Datasets
