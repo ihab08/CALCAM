@@ -5,6 +5,7 @@ Official repository associated with the manuscript:
 CALCAM: Cross Attention based on Linear Central Alignment for Multimodal Learning
 
 CALCAM is a multimodal fusion framework that uses Centered Kernel Alignment (CKA) to identify the most aligned modality pair and guide targeted cross-attention.
+
 Supplementary Material
 
 Additional details on the datasets, experimental protocol, CKA analysis, and experimental results are available in:
