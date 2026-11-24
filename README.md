@@ -98,16 +98,12 @@ python experiments/run_cka.py --dataset cmu-mosei --data-dir data/embeddings/cmu
 
 ### CKA modality selection
 
-**Dataset** 	**Selected pair** 	**Linear CKA**
-
-C-MAPSS	M2--M3	0.943
-
-Fracture	Image--Tabular	0.025
-
-CMU-MOSEI	Visual--Text	0.048
-
+| Dataset | Selected pair | Linear CKA |
+|---|---|---:|
+| C-MAPSS | M2--M3 | 0.943 |
+| Fracture | Image--Tabular | 0.025 |
+| CMU-MOSEI | Visual--Text | 0.048 |
 
 The modality pair with the highest Linear CKA score is selected for cross-attention in CALCAM.
-
 ## Code
 Additional CALCAM and baseline fusion implementations will be added to this repository.
