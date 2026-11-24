@@ -24,6 +24,43 @@ CALCAM is evaluated on three multimodal datasets:
 
 The datasets are not redistributed in this repository.
 
-Code
 
-Implementation code and reproducibility resources will be added to this repository.
+Linear CKA Analysis
+The repository provides the Linear Centered Kernel Alignment (CKA) implementation used to determine the modality pair selected by CALCAM.
+
+The implementation is available in:
+
+src/cka.py
+
+The experimental script for the three datasets is available in:
+
+experiments/run_cka.py
+
+Expected embedding structure
+The CKA experiment expects precomputed modality representations with the following local structure:
+
+data/
+└── embeddings/
+    ├── cmapss/
+    │   ├── Z1_tr.npy
+    │   ├── Z1_va.npy
+    │   ├── Z2_tr.npy
+    │   ├── Z2_va.npy
+    │   ├── Z3_tr.npy
+    │   └── Z3_va.npy
+    │
+    ├── fracture/
+    │   ├── Zimg_train.npy
+    │   ├── Zimg_val.npy
+    │   ├── Zimg_test.npy
+    │   ├── Ztxt_train.npy
+    │   ├── Ztxt_val.npy
+    │   ├── Ztxt_test.npy
+    │   ├── Ztab_train.npy
+    │   ├── Ztab_val.npy
+    │   └── Ztab_test.npy
+    │
+    └── cmu_mosei/
+        ├── X_visual_openface.npy
+        ├── X_audio_covarep.npy
+        └── X_text_wordvec.npy
