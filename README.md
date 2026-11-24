@@ -35,6 +35,97 @@ Experimental script:
 
 experiments/run_cka.py
 
+
+### Expected embedding files
+
+The CKA experiments require precomputed modality representations.
+
+**C-MAPSS**
+
+```text
+Z1_tr.npy
+Z1_va.npy
+Z2_tr.npy
+Z2_va.npy
+Z3_tr.npy
+Z3_va.npy
+```
+
+**Fracture**
+
+```text
+Zimg_train.npy
+Zimg_val.npy
+Zimg_test.npy
+
+Ztxt_train.npy
+Ztxt_val.npy
+Ztxt_test.npy
+
+Ztab_train.npy
+Ztab_val.npy
+Ztab_test.npy
+```
+
+**CMU-MOSEI**
+
+```text
+X_visual_openface.npy
+X_audio_covarep.npy
+X_text_wordvec.npy
+```
+
+The embedding files are not included in this repository.
+
+### Running the CKA analysis
+
+Run the scripts from the repository root.
+
+**C-MAPSS**
+
+```bash
+python experiments/run_cka.py --dataset cmapss --data-dir data/embeddings/cmapss
+```
+
+**Fracture**
+
+```bash
+python experiments/run_cka.py --dataset fracture --data-dir data/embeddings/fracture
+```
+
+**CMU-MOSEI**
+
+```bash
+python experiments/run_cka.py --dataset cmu-mosei --data-dir data/embeddings/cmu_mosei
+```
+
+### CKA modality selection
+
+| Dataset | Selected pair | Linear CKA |
+|---|---|---:|
+| C-MAPSS | M2--M3 | 0.943 |
+| Fracture | Image--Tabular | 0.025 |
+| CMU-MOSEI | Visual--Text | 0.048 |
+
+The modality pair with the highest Linear CKA score is selected for cross-attention in CALCAM.
+
+## Code
+
+Additional CALCAM and baseline fusion implementations will be added to this repository.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Expected embedding files
 The CKA experiments require precomputed modality representations.
 
