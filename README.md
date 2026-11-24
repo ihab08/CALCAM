@@ -133,7 +133,7 @@ CALCAM applies bidirectional cross-attention to the modality pair selected by Li
 
 ```bash
 pip install -r requirements.txt
-
+```
 ## Running CALCAM
 
 The experiments assume that the precomputed modality embeddings are available locally as described above.
