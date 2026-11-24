@@ -73,6 +73,7 @@ Ztab_test.npy
 X_visual_openface.npy
 X_audio_covarep.npy
 X_text_wordvec.npy
+sentiment.npy
 ```
 
 The embedding files are not included in this repository.
@@ -132,3 +133,36 @@ CALCAM applies bidirectional cross-attention to the modality pair selected by Li
 
 ```bash
 pip install -r requirements.txt
+
+## Running CALCAM
+
+The experiments assume that the precomputed modality embeddings are available locally as described above.
+
+### C-MAPSS
+
+```bash
+python experiments/run_calcam_cmapss.py \
+    --data-dir data/embeddings/cmapss
+```
+
+### Fracture
+
+```bash
+python experiments/run_calcam_fracture.py \
+    --data-dir data/embeddings/fracture
+```
+
+### CMU-MOSEI
+
+```bash
+python experiments/run_calcam_mosei.py \
+    --data-dir data/embeddings/cmu_mosei
+```
+
+### Architecture test
+
+A minimal forward-pass test can be executed with:
+
+```bash
+python experiments/test_calcam.py
+```
