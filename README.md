@@ -2,7 +2,7 @@
  
 Official repository associated with the manuscript:
 
-# CALCAM: Cross Attention based on Linear Central Alignment for Multimodal Learning
+## CALCAM: Cross Attention based on Linear Central Alignment for Multimodal Learning
 
 CALCAM is a multimodal fusion framework that uses Centered Kernel Alignment (CKA) to identify the most aligned modality pair and guide targeted cross-attention.
 
@@ -16,11 +16,11 @@ Additional details on the datasets, experimental protocol, CKA analysis, and exp
 
 CALCAM is evaluated on three multimodal datasets:
 
-•	**C-MAPSS** — industrial predictive maintenance
+• **C-MAPSS** — industrial predictive maintenance
 
-•	**Fracture** — multimodal medical diagnosis
+• **Fracture** — multimodal medical diagnosis
 
-•	**CMU-MOSEI** — multimodal sentiment analysis
+• **CMU-MOSEI** — multimodal sentiment analysis
 
 The datasets are not redistributed in this repository.
 
@@ -29,11 +29,11 @@ The repository provides the Linear Centered Kernel Alignment (CKA) implementatio
 
 CKA implementation:
 
-src/cka.py
+`src/cka.py`
 
 Experimental script:
 
-experiments/run_cka.py
+`experiments/run_cka.py`
 
 
 ### Expected embedding files
