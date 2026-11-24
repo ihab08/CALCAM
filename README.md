@@ -127,3 +127,8 @@ Dataset-specific training and evaluation scripts are provided for:
 
 CALCAM applies bidirectional cross-attention to the modality pair selected by Linear CKA, processes the remaining modality independently, and integrates the resulting representations through a shared Transformer.
 
+
+## Installation
+
+```bash
+pip install -r requirements.txt
