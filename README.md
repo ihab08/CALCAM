@@ -97,7 +97,8 @@ python experiments/run_cka.py --dataset fracture --data-dir data/embeddings/frac
 python experiments/run_cka.py --dataset cmu-mosei --data-dir data/embeddings/cmu_mosei
 
 ### CKA modality selection
-# Dataset	Selected pair	Linear CKA
+
+**Dataset** 	**Selected pair** 	**Linear CKA**
 
 C-MAPSS	M2--M3	0.943
 
