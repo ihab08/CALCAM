@@ -109,7 +109,21 @@ python experiments/run_cka.py --dataset cmu-mosei --data-dir data/embeddings/cmu
 
 The modality pair with the highest Linear CKA score is selected for cross-attention in CALCAM.
 
-## Code
+## CALCAM Implementation
 
-Additional CALCAM and baseline fusion implementations will be added to this repository.
+The generic CALCAM architecture is available in:
+
+`src/calcam.py`
+
+A minimal forward-pass test is available in:
+
+`experiments/test_calcam.py`
+
+Dataset-specific training and evaluation scripts are provided for:
+
+- **C-MAPSS** — `experiments/run_calcam_cmapss.py`
+- **Fracture** — `experiments/run_calcam_fracture.py`
+- **CMU-MOSEI** — `experiments/run_calcam_mosei.py`
+
+CALCAM applies bidirectional cross-attention to the modality pair selected by Linear CKA, processes the remaining modality independently, and integrates the resulting representations through a shared Transformer.
 
