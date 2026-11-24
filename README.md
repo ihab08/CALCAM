@@ -126,6 +126,19 @@ Additional CALCAM and baseline fusion implementations will be added to this repo
 
 
 
+X_visual_openface.npy
+
+X_audio_covarep.npy
+
+X_text_wordvec.npy
+
+The embedding files are not included in this repository.
+
+### Running the CKA analysis
+Run the scripts from the repository root.
+
+# C-MAPSS 
+
 ### Expected embedding files
 The CKA experiments require precomputed modality representations.
 
@@ -164,19 +177,6 @@ Ztab_val.npy
 Ztab_test.npy
 
 # CMU-MOSEI
-
-X_visual_openface.npy
-
-X_audio_covarep.npy
-
-X_text_wordvec.npy
-
-The embedding files are not included in this repository.
-
-### Running the CKA analysis
-Run the scripts from the repository root.
-
-# C-MAPSS 
 
 python experiments/run_cka.py --dataset cmapss --data-dir data/embeddings/cmapss
 Fracture
