@@ -85,7 +85,7 @@ The embedding files are not included in this repository.
 ### Running the CKA analysis
 Run the scripts from the repository root.
 
-# C-MAPSS
+# C-MAPSS 
 
 python experiments/run_cka.py --dataset cmapss --data-dir data/embeddings/cmapss
 Fracture
