@@ -27,18 +27,12 @@ The datasets are not redistributed in this repository.
 
 Linear CKA Analysis
 The repository provides the Linear Centered Kernel Alignment (CKA) implementation used to determine the modality pair selected by CALCAM.
-
 The implementation is available in:
-
 src/cka.py
-
 The experimental script for the three datasets is available in:
-
 experiments/run_cka.py
-
 Expected embedding structure
 The CKA experiment expects precomputed modality representations with the following local structure:
-
 data/
 └── embeddings/
     ├── cmapss/
