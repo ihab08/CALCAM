@@ -55,22 +55,31 @@ Z3_va.npy
 # Fracture
 
 Zimg_train.npy
+
 Zimg_val.npy
+
 Zimg_test.npy
 
 Ztxt_train.npy
+
 Ztxt_val.npy
+
 Ztxt_test.npy
 
 Ztab_train.npy
+
 Ztab_val.npy
+
 Ztab_test.npy
 
 # CMU-MOSEI
 
 X_visual_openface.npy
+
 X_audio_covarep.npy
+
 X_text_wordvec.npy
+
 The embedding files are not included in this repository.
 
 ### Running the CKA analysis
